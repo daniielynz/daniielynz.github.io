@@ -8,19 +8,84 @@ body {
     font-family: 'Courier New', monospace;
     background-color: #d4d4d4;
     color: #2d2d2d;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 0em 10em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark-mode .logo,
+body.dark-mode nav a {
+    color: #e0e0e0;
+}
+
+body.dark-mode .theme-toggle {
+    background-color: #2d2d2d;
+    border-color: #e0e0e0;
+}
+
+body.dark-mode .theme-toggle::after {
+    background-color: #e0e0e0;
+    left: 2px;
+    right: auto;
+}
+
+body.dark-mode .skill-card {
+    background-color: #2d2d2d;
+    border-color: #e0e0e0;
+    color: #e0e0e0;
+}
+
+body.dark-mode .project-image img {
+    border-color: #e0e0e0;
+}
+
+body.dark-mode .github-button {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    border-color: #e0e0e0;
+}
+
+body.dark-mode .github-button:hover {
+    background-color: #e0e0e0;
+    color: #2d2d2d;
+}
+
+body.dark-mode .social-icons a {
+    background-color: #e0e0e0;
+    color: #2d2d2d;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
+    padding: 0px 60px;
 }
 
-.logo {
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: -2px;
+.div-logo{
+    padding: 0px;
+}
+
+.div-logo img {
+    width: 20%;
+    padding-top: 5%;
+    object-fit: contain;
+    filter: brightness(1.1);
+    transition: transform 1s ease; /* El tiempo que durara haciendo la animacion */
+}
+
+.div-logo img:hover {
+    transform: scale(1.8) rotate(15deg);
 }
 
 nav {
@@ -60,17 +125,15 @@ nav a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 80px 60px;
-    gap: 100px;
+    gap: 2%;
 }
 
 .hero-text {
     max-width: 400px;
-}
-
-.hero-text p {
-    font-size: 14px;
-    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-text h1 {
@@ -107,8 +170,7 @@ nav a {
 }
 
 .hero-image {
-    width: 450px;
-    height: 450px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,10 +194,10 @@ h2.section-title {
     font-family: Arial, sans-serif;
 }
 
-.sobre-content p {
-    font-size: 16px;
-    line-height: 1.8;
-    margin-bottom: 20px;
+.sobreMi{
+    display: flex;
+    flex-direction: column;
+    margin-left: 17%;
 }
 
 .sobre-content strong {
@@ -215,11 +277,6 @@ h2.section-title {
     font-weight: 600;
 }
 
-.project-info p {
-    font-size: 15px;
-    line-height: 1.8;
-    margin-bottom: 15px;
-}
 
 .project-tags {
     display: flex;

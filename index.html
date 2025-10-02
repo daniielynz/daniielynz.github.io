@@ -5,53 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel</title>
     <link rel="stylesheet" href="./estilos/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="./js/script.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="logo">Daniel</div>
+        <div class="div-logo">
+            <img src="imagenes/logo.png" alt="Logo" class="logo">
+        </div>
+
         <nav>
             <a href="#sobre">Sobre</a>
             <a href="#skills">Skills</a>
             <a href="#projetos">Projetos</a>
-            <div class="theme-toggle"></div>
+            <div class="theme-toggle" onclick="toggleTheme()"></div>
         </nav>
     </header>
 
     <section class="hero">
         <div class="hero-text">
             <h1>Daniel</h1>
-            <h2>Desarrollador web y multiplataforma</h2>
-            <h2>programador</h2>
+            <h2>Desarrollador web y multiplataforma</h2><br>
+            <h2>Programador</h2><br>
+            <h2>Técnico informático</h2>
             <div class="social-icons">
-                <a href="#">⚡</a>
-                <a href="#">✉</a>
-                <a href="#">in</a>
-                <a href="#">📷</a>
+                <a href="https://github.com/daniielynz" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="E-Mail:Danielyanezdm2@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/danielyanezpena/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
             </div>
         </div>
         <div class="hero-image">
             <!-- Aquí va tu foto en PNG -->
             <img src="imagenes/yo.png" alt="Tu foto">
         </div>
-    </section>
 
-    <section id="sobre">
-        <h2 class="section-title">Sobre</h2>
-        <div class="sobre-content">
-            <p>Sou o <strong>Artur</strong>, apaixonado por <strong>conhecimento</strong>, seja relacionado a <strong>tecnologia</strong>, natureza, universo ou vida. Meus hobbies incluem diversas formas de <strong>arte</strong>, como desenho e design, e desde pequeno, sempre tive um fascínio por entender como as coisas funcionam. Isso me levou a gostar de <strong>projetar</strong> e colocar a mão na massa para <strong>desenvolver</strong>.</p>
-            
-            <p>Atualmente sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> (ADS) e estou curtindo muito explorar o mundo da TI. Tenho uma paixão especial pelo <strong>desenvolvimento web</strong>, especialmente pela criação de <strong>designs</strong> e codificação de páginas utilizando <strong>React e Tailwind</strong>, afinal, sou um dev front-end. No entanto, estou ansioso para aprender outras linguagens e tecnologias para ter maior <strong>autonomia</strong> e atuar tanto no front-end quanto no back-end.</p>
-            
-            <p>Manda um <strong>email:</strong> <a href="mailto:arttturslv@gmail.com">arttturslv@gmail.com</a></p>
+        <div class="sobreMi">
+            <h2 class="section-title">Sobre mi</h2>
+            <div class="sobre-content">
+                <p>Soy Daniel (@daniielynz), un Desarrollador Web y Programador Full Stack.<br> Mi experiencia se centra en construir soluciones digitales completas: desde el diseño y la interactividad con HTML, CSS y JavaScript en el frontend, hasta la lógica de negocio y las bases de datos en el backend.
+                Mi principal objetivo es entregar código limpio, arquitectura eficiente y resultados funcionales. Me apasiona llevar un proyecto del concepto inicial a un producto final optimizado y con un excelente rendimiento.
+                Estoy disponible para nuevas oportunidades Full Stack. Puedes consultar mi CV y mis proyectos más recientes a continuación.</p>
+            </div>    
         </div>
+
     </section>
 
     <section id="skills">
-        <h2 class="section-title">Conhecimentos</h2>
+        <h2 class="section-title">Conocimentos</h2>
         <div class="conocimientos-grid">
             <div class="skill-card">
                 <div class="skill-icon">⚛️</div>
-                <span>React</span>
+                <span>PHP</span>
             </div>
             <div class="skill-card">
                 <div class="skill-icon">JS</div>
@@ -75,7 +85,7 @@
             </div>
             <div class="skill-card">
                 <div class="skill-icon">🎨</div>
-                <span>Figma</span>
+                <span>CSS</span>
             </div>
             <div class="skill-card">
                 <div class="skill-icon">W</div>
@@ -93,11 +103,11 @@
     </section>
 
     <section id="projetos">
-        <h2 class="section-title">Projetos</h2>
+        <h2 class="section-title">Proyectos</h2>
         
         <div class="project-card">
             <div class="project-image">
-                <img src="https://via.placeholder.com/500x350/2d2d2d/ffffff?text=Congrats+Project" alt="Congrats">
+                <img src="./imagenes/prueba.PNG" alt="Congrats">
             </div>
             <div class="project-info">
                 <div class="project-title">
@@ -117,7 +127,7 @@
 
         <div class="project-card">
             <div class="project-image">
-                <img src="https://via.placeholder.com/500x350/5c4630/f5e6c8?text=Posta+ai" alt="Posta ai">
+                <img src="./imagenes/prueba.PNG" alt="Posta ai">
             </div>
             <div class="project-info">
                 <div class="project-title">
@@ -135,7 +145,7 @@
 
         <div class="project-card">
             <div class="project-image">
-                <img src="https://via.placeholder.com/500x350/2d2d2d/ffffff?text=Minimiza+ai" alt="Minimiza ai">
+                <img src="./imagenes/prueba.PNG" alt="Minimiza ai">
             </div>
             <div class="project-info">
                 <div class="project-title">
@@ -155,7 +165,7 @@
 
         <div class="project-card">
             <div class="project-image">
-                <img src="https://via.placeholder.com/500x350/2f4a4a/ffffff?text=Guru+Sabedoria" alt="Guru sabedoria">
+                <img src="./imagenes/prueba.PNG" alt="Guru sabedoria">
             </div>
             <div class="project-info">
                 <div class="project-title">
@@ -171,7 +181,7 @@
         </div>
 
         <div class="github-button-container">
-            <a href="https://github.com/arttturslv" class="github-button">Ver mais no Github</a>
+            <a href="https://github.com/daniielynz" class="github-button">Mi Github</a>
         </div>
     </section>
 </body>
