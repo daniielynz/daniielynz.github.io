@@ -3,54 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel | Portafolio Desarrollador Full Stack</title>
-
-    <link rel="stylesheet" href="./estilos/styles.css"> 
+    <title>Daniel</title>
+    <link rel="stylesheet" href="./estilos/styles.css">
 </head>
 <body>
-    
-    <header id="inicio">
-        <h1>Daniel (@daniielynz)</h1>
-        <p>Desarrollador Web Full Stack | HTML, CSS, JavaScript</p>
-        <a href="#proyectos">Ver Proyectos</a>
+    <header>
+        <div class="logo">Daniel</div>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#skills">Skills</a>
+            <a href="#projetos">Projetos</a>
+            <div class="theme-toggle"></div>
+        </nav>
     </header>
 
-    <section id="acerca-de">
-        <h2>Acerca de Mí</h2>
-        <p>Mi experiencia abarca el ciclo completo de desarrollo. Soy un apasionado por la eficiencia en el código y la usabilidad en el diseño.</p>
-        <a href="https://es.linkedin.com/pulse/c%C3%B3mo-hacer-un-cv-de-alto-impacto-jorge-s%C3%A1nchez-morz%C3%A1n">Ver Perfil Completo</a>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Daniel</h1>
+            <h2>Desarrollador web y multiplataforma</h2>
+            <h2>programador</h2>
+            <div class="social-icons">
+                <a href="#">⚡</a>
+                <a href="#">✉</a>
+                <a href="#">in</a>
+                <a href="#">📷</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- Aquí va tu foto en PNG -->
+            <img src="imagenes/yo.png" alt="Tu foto">
+        </div>
     </section>
 
-    <main id="proyectos">
-        <h2>Mis Proyectos Destacados</h2>
-        
-        <article class="proyecto">
-            <h3>Nombre del Proyecto (Ej: Clon de Trello)</h3>
-            <p>Descripción breve del proyecto y las tecnologías Full Stack utilizadas.</p>
+    <section id="sobre">
+        <h2 class="section-title">Sobre</h2>
+        <div class="sobre-content">
+            <p>Sou o <strong>Artur</strong>, apaixonado por <strong>conhecimento</strong>, seja relacionado a <strong>tecnologia</strong>, natureza, universo ou vida. Meus hobbies incluem diversas formas de <strong>arte</strong>, como desenho e design, e desde pequeno, sempre tive um fascínio por entender como as coisas funcionam. Isso me levou a gostar de <strong>projetar</strong> e colocar a mão na massa para <strong>desenvolver</strong>.</p>
             
-            <div class="video-demo">
-                 [Espacio para el Iframe del Video]
-            </div>
+            <p>Atualmente sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> (ADS) e estou curtindo muito explorar o mundo da TI. Tenho uma paixão especial pelo <strong>desenvolvimento web</strong>, especialmente pela criação de <strong>designs</strong> e codificação de páginas utilizando <strong>React e Tailwind</strong>, afinal, sou um dev front-end. No entanto, estou ansioso para aprender outras linguagens e tecnologias para ter maior <strong>autonomia</strong> e atuar tanto no front-end quanto no back-end.</p>
+            
+            <p>Manda um <strong>email:</strong> <a href="mailto:arttturslv@gmail.com">arttturslv@gmail.com</a></p>
+        </div>
+    </section>
 
-            <div class="enlaces">
-                <a href="https://www.youtube.com/watch?v=nO-R3OwHNHY" target="_blank">Demo Live</a>
-                <a href="https://docs.github.com/es/repositories/creating-and-managing-repositories/quickstart-for-repositories" target="_blank">Código (GitHub)</a>
+    <section id="skills">
+        <h2 class="section-title">Conhecimentos</h2>
+        <div class="conocimientos-grid">
+            <div class="skill-card">
+                <div class="skill-icon">⚛️</div>
+                <span>React</span>
             </div>
-        </article>
+            <div class="skill-card">
+                <div class="skill-icon">JS</div>
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🌊</div>
+                <span>Tailwind</span>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">📘</div>
+                <span>CSS</span>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">📕</div>
+                <span>HTML</span>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">⚛️</div>
+                <span>React Native</span>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <span>Figma</span>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">W</div>
+                <span>Wordpress</span>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">☕</div>
+                <span>Java</span>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🔀</div>
+                <span>GIT</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <h2 class="section-title">Projetos</h2>
         
-        </main>
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://via.placeholder.com/500x350/2d2d2d/ffffff?text=Congrats+Project" alt="Congrats">
+            </div>
+            <div class="project-info">
+                <div class="project-title">
+                    Congrats - <span class="done-badge">DONE ✓</span>
+                </div>
+                <p>O projeto foi desenvolvido com React e Node, permitindo que os usuários criem mensagens personalizadas para celebrar ocasiões especiais, como Natal, aniversários, amizades, entre outros. A proposta é tornar cada celebração única e especial.</p>
+                <div class="project-tags">
+                    <span class="tag">#react</span>
+                    <span class="tag">#javascript</span>
+                    <span class="tag">#tailwind</span>
+                    <span class="tag">#node</span>
+                    <span class="tag">#express</span>
+                    <span class="tag">#mongoose</span>
+                </div>
+            </div>
+        </div>
 
-    <footer>
-        <h2>Contacto</h2>
-        <p>¿Tienes una oportunidad? Hablemos.</p>
-        <address>
-            Email: [tu.email@ejemplo.com]<br>
-            LinkedIn: [Tu Enlace]
-        </address>
-        <p>&copy; 2024 Daniel. Todos los derechos reservados.</p>
-    </footer>
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://via.placeholder.com/500x350/5c4630/f5e6c8?text=Posta+ai" alt="Posta ai">
+            </div>
+            <div class="project-info">
+                <div class="project-title">
+                    Posta ai - <span class="done-badge">DONE ✓</span>
+                </div>
+                <p>Este projeto foi desenvolvido com React e Tailwind no frontend, Node.js no backend e MongoDB como banco de dados. A ideia principal deste projeto foi disponibilizar um site em que qualquer pessoa pudesse contribuir colocando anotações na homepage.</p>
+                <div class="project-tags">
+                    <span class="tag">#react</span>
+                    <span class="tag">#node.js</span>
+                    <span class="tag">#mongoDB</span>
+                    <span class="tag">#tailwind</span>
+                </div>
+            </div>
+        </div>
 
-    <script src="./js/JavaSctipt.js"></script>
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://via.placeholder.com/500x350/2d2d2d/ffffff?text=Minimiza+ai" alt="Minimiza ai">
+            </div>
+            <div class="project-info">
+                <div class="project-title">
+                    Minimiza ai - <span class="done-badge">DONE ✓</span>
+                </div>
+                <p>Este projeto foi desenvolvido para criar uma interface front-end integrada ao meu back-end. O desenvolvimento começou pelo back-end, com foco em aprofundar o entendimento de conceitos básicos, como o uso do Express.js.</p>
+                <div class="project-tags">
+                    <span class="tag">#react</span>
+                    <span class="tag">#node.js</span>
+                    <span class="tag">#mongoDB</span>
+                    <span class="tag">#tailwind</span>
+                    <span class="tag">#express</span>
+                    <span class="tag">#mongoose</span>
+                </div>
+            </div>
+        </div>
 
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://via.placeholder.com/500x350/2f4a4a/ffffff?text=Guru+Sabedoria" alt="Guru sabedoria">
+            </div>
+            <div class="project-info">
+                <div class="project-title">
+                    Guru sabedoria - <span class="done-badge">DONE ✓</span>
+                </div>
+                <p>Este projeto foi desenvolvido utilizando HTML, CSS, JS e Bootstrap. O foco deste trabalho foi reforçar os conhecimentos sobre APIs, além de entender mais sobre animações CSS e o modo noturno. Também foi meu primeiro contato com o design de interfaces, onde, antes de tudo, pensei em como o website seria e como os elementos se complementariam. Foi possível aprender animações "infinite" para fazer o monge flutuar, o modo noturno que muda o fundo de azul para amarelo, a animação de digitação para exibir o conteúdo recebido pela API, além de efeitos sonoros e como os navegadores os bloqueiam até que o usuário interaja com a tela (aplicado ao clicar no monge).</p>
+                <div class="project-tags">
+                    <span class="tag">#css</span>
+                    <span class="tag">#html</span>
+                    <span class="tag">#javascript</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="github-button-container">
+            <a href="https://github.com/arttturslv" class="github-button">Ver mais no Github</a>
+        </div>
+    </section>
 </body>
 </html>
