@@ -1,0 +1,109 @@
+/* ------------------------------------------- */
+/* 1. RESET Y FUNDAMENTOS GLOBALES             */
+/* ------------------------------------------- */
+
+/* Reset básico para que todos los navegadores se vean igual */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Crucial para manejar el padding y el border */
+}
+
+/* Estilos de la página: Tipografía y color de fondo */
+body {
+    font-family: sans-serif; /* Tipografía básica y legible */
+    line-height: 1.6;        /* Espaciado de línea para mejorar la lectura */
+    background-color: #f4f4f9; /* Fondo muy claro y suave */
+    color: #333;             /* Texto oscuro */
+    padding: 20px;           /* Espaciado general del cuerpo */
+}
+
+/* ------------------------------------------- */
+/* 2. LAYOUT Y CONTENEDOR CENTRAL              */
+/* ------------------------------------------- */
+
+/* Usamos un contenedor principal para centrar el contenido y limitar el ancho */
+/* En tu HTML básico, el 'body' ya actúa como contenedor, pero es buena práctica limitar */
+main, header, footer, section {
+    max-width: 1000px; /* Ancho máximo para que no se estire demasiado en pantallas grandes */
+    margin: 40px auto; /* Centra el bloque horizontalmente y añade espacio vertical */
+    padding: 20px;
+}
+
+/* ------------------------------------------- */
+/* 3. TIPOGRAFÍA Y ESTILOS BÁSICOS             */
+/* ------------------------------------------- */
+
+/* Encabezados */
+h1 {
+    font-size: 2.5em; /* Tamaño grande para el título principal */
+    text-align: center;
+    margin-bottom: 10px;
+    color: #007bff; /* Un toque de color para el nombre/título */
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd; /* Línea separadora simple */
+    padding-bottom: 5px;
+}
+
+/* Párrafos */
+p {
+    margin-bottom: 15px;
+}
+
+/* Enlaces (Botones y texto) */
+a {
+    color: #007bff; /* Color azul estándar para enlaces */
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3; /* Color más oscuro al pasar el ratón */
+    text-decoration: underline;
+}
+
+/* ------------------------------------------- */
+/* 4. ESTILOS DE PROYECTOS (Artículo)          */
+/* ------------------------------------------- */
+
+/* Estilo simple para cada tarjeta de proyecto */
+.proyecto {
+    background-color: #fff; /* Fondo blanco para las tarjetas */
+    border: 1px solid #ddd;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px; /* Bordes redondeados suaves */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra muy sutil */
+}
+
+/* Estilos para los botones/enlaces dentro de un proyecto */
+.enlaces a {
+    display: inline-block; /* Permite controlar el margen y el padding */
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.enlaces a:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+/* ------------------------------------------- */
+/* 5. SECCIÓN DE CONTACTO (Footer)             */
+/* ------------------------------------------- */
+
+footer {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+    color: #666;
+}
