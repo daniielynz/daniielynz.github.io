@@ -85,7 +85,7 @@ header {
 }
 
 .div-logo img:hover {
-    transform: scale(1.8) rotate(15deg);
+    transform: scale(1.2) rotate(15deg);
 }
 
 nav {
@@ -238,14 +238,14 @@ h2.section-title {
 
 .project-card {
     display: flex;
-    gap: 40px;
-    margin-bottom: 60px;
+    gap: 5%;
+    margin-bottom: 10%;
     align-items: flex-start;
 }
 
 .project-image {
     flex: 1;
-    max-width: 500px;
+    max-width: 60vh;
 }
 
 .project-image img {
