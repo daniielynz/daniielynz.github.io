@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videoclub - Daniel</title>
+    <link rel="stylesheet" href="../estilos/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../js/script.js" defer></script>
+    <link rel="stylesheet" href="../estilos/styles_2.css">
+</head>
+<body>
+    <header>
+        <div class="div-logo">
+            <img src="../imagenes/logo.png" alt="Logo" class="logo">
+        </div>
+
+        <nav>
+            <a href="../index.html#sobreMi">Portafolio</a>
+            <div class="theme-toggle" onclick="toggleTheme()"></div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        
+
+        <div class="project-detail-card">
+            <!-- Collage de fotos a la izquierda -->
+            <div class="project-collage">
+                <div class="collage-item">
+                    <img src="../imagenes/Subastas/inicio.png" alt="Pantalla principal de Videoclub">
+                </div>
+                <div class="collage-item">
+                    <img src="../imagenes/Subastas/chat.png" alt="Catálogo de películas">
+                </div>
+                <div class="collage-item">
+                    <img src="../imagenes/Subastas/aniadir-item.png" alt="Detalle de película">
+                </div>
+                <div class="collage-item">
+                    <img src="../imagenes/Subastas/puja-sin-loguearse.png" alt="Detalle de película">
+                </div>
+                <div class="collage-item">
+                    <img src="../imagenes/Subastas/login.png" alt="Detalle de película">
+                </div>
+                <div class="collage-item">
+                    <img src="../imagenes/Subastas/puja.png" alt="Detalle de película">
+                </div>
+            </div>
+
+            <!-- Contenido a la derecha -->
+            <div class="project-content">
+                <div class="project-header-inline">
+                    <h1>Subastas - <span class="finalizada-badge">FINALIZADA ✓</span></h1>
+                </div>
+
+                <p>
+                    Plataforma de Subastas en línea, diseñada para la gestión de pujas y artículos. Este es un proyecto <strong>Full Stack</strong> que tiene a <strong>PHP</strong> como su lenguaje principal.
+                    <br> 
+                    Implementé la arquitectura <strong>Modelo-Vista-Controlador (MVC)</strong>: el <strong>Back-end</strong> se basa en <strong>PHP</strong>, utilizando código <strong>SQL directo</strong> para gestionar las consultas y transacciones en la base de datos <strong>MySQL</strong>. El <strong>Front-end</strong> se construyó con <strong>HTML</strong> y <strong>CSS</strong>.
+                </p>
+                <p>
+                    Como elemento innovador, he integrado un <strong>chatbot</strong> de asistencia utilizando <strong>JavaScript</strong>, la plataforma de automatización <strong>n8n</strong> y el modelo de lenguaje <strong>Llama3</strong>, añadiendo una capa de inteligencia artificial al servicio.
+                </p>
+
+                <div class="project-tags-inline">
+                    <span class="tag-inline">#PHP</span>
+                    <span class="tag-inline">#SQL</span>
+                    <span class="tag-inline">#HTML</span>
+                    <span class="tag-inline">#JavaScript</span>
+                    <span class="tag-inline">#CSS</span>
+                    <span class="tag-inline">#MVC</span>
+                    <span class="tag-inline">#LLama3</span>
+                    <span class="tag-inline">#n8n</span>
+                </div>
+
+                <div class="description-section">
+                    <h3>Características Principales</h3>
+                    
+                    <div class="feature-item">
+                        <p><i class="fa-solid fa-user-lock"></i><strong>Sistema de autenticación:</strong> Gestión completa de usuarios con registro, login y perfiles personalizados.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <p><i class="fa-solid fa-film"></i><strong>Listado de productos en venta:</strong> Navegación intuitiva con filtros avanzados, categorización por tipo de producto.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <p><i class="fa-solid fa-shopping-cart"></i><strong>Sistema de puja:</strong> Opción de puja funcional solo para los usuarios autenticados (como se muestra en las imágenes)</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <p><i class="fa-solid fa-database"></i><strong>Gestión de inventario:</strong> Control eficiente del stock de productos mediante consultas SQL optimizadas.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <p><i class="fa-solid fa-code"></i><strong>Arquitectura MVC:</strong> Código organizado, escalable y fácil de mantener siguiendo las mejores prácticas.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <p><i class="fa-solid fa-mobile-alt"></i><strong>Diseño responsive:</strong> Interfaz adaptable a cualquier dispositivo gracias a Bootstrap.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <p><i class="fa-solid fa-headset"></i><strong>Chatbot de ayuda:</strong> Asistencia automática a los usuarios mediante respuestas inteligentes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

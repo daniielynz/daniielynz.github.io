@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videoclub - Daniel</title>
+    <link rel="stylesheet" href="../estilos/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../js/script.js" defer></script>
+    <link rel="stylesheet" href="../estilos/styles_2.css">
+</head>
+<body>
+    <header>
+        <div class="div-logo">
+            <img src="../imagenes/logo.png" alt="Logo" class="logo">
+        </div>
+
+        <nav>
+            <a href="../index.html#sobreMi">Portafolio</a>
+            <div class="theme-toggle" onclick="toggleTheme()"></div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        
+
+        <div class="project-detail-card">
+            <!-- Collage de fotos a la izquierda -->
+            <div class="project-collage">
+                <div class="collage-item">
+                    <img src="../imagenes/videoclub/videoclub-login.png" alt="Pantalla principal de Videoclub">
+                </div>
+                <div class="collage-item">
+                    <img src="../imagenes/videoclub/registro.png" alt="Pantalla principal de Videoclub">
+                </div>
+                <div class="collage-item">
+                    <img src="../imagenes/videoclub/videoclub-inicio.png" alt="Catálogo de películas">
+                </div>
+                <div class="collage-item">
+                    <img src="../imagenes/videoclub/videoclub-carrusel.png" alt="Detalle de película">
+                </div>
+                <div class="collage-item">
+                    <img src="../imagenes/videoclub/videoclub-peliculadetalles.png" alt="Detalle de película">
+                </div>
+                <div class="collage-item">
+                    <img src="../imagenes/videoclub/videoclub-carro.png" alt="Detalle de película">
+                </div>
+            </div>
+
+            <!-- Contenido a la derecha -->
+            <div class="project-content">
+                <div class="project-header-inline">
+                    <h1>Videoclub - <span class="finalizada-badge">FINALIZADA ✓</span></h1>
+                </div>
+
+                <p>
+                    Web de <strong>Videoclub</strong> que funciona como una simulación de plataforma de gestión y compra de películas. Este es un proyecto <strong>Full Stack</strong> que tiene a <strong>Java</strong> como su lenguaje principal.
+                </p>
+
+                <p>
+                    Implementamos la arquitectura <strong>Modelo-Vista-Controlador (MVC)</strong>: utilizamos <strong>Servlets</strong> para la lógica de negocio en el <strong>Back-end</strong>, y <strong>JSP</strong>, <strong>JavaScript</strong>, <strong>CSS</strong> y <strong>Bootstrap</strong> para la interfaz en el <strong>Front-end</strong> y conseguir un diseño funcional. El acceso a los datos se realiza mediante clases que usan código <strong>SQL</strong> directo para gestionar la conexión con la base de datos <strong>MySQL</strong>.
+                </p>
+
+                <div class="project-tags-inline">
+                    <span class="tag-inline">#Java</span>
+                    <span class="tag-inline">#Servlets</span>
+                    <span class="tag-inline">#Jsp</span>
+                    <span class="tag-inline">#SQL</span>
+                    <span class="tag-inline">#JavaScript</span>
+                    <span class="tag-inline">#CSS</span>
+                    <span class="tag-inline">#Bootstrap</span>
+                    <span class="tag-inline">#MVC</span>
+                </div>
+
+                <div class="description-section">
+                    <h3>Características Principales</h3>
+                    
+                    <div class="feature-item">
+                        <p><i class="fa-solid fa-user-lock"></i><strong>Sistema de autenticación:</strong> Gestión completa de usuarios con registro, login y perfiles personalizados.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <p><i class="fa-solid fa-film"></i><strong>Catálogo de películas:</strong> Navegación intuitiva con filtros avanzados, búsqueda y categorización por género.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <p><i class="fa-solid fa-shopping-cart"></i><strong>Sistema de compra:</strong> Carrito de compra funcional con gestión de pedidos y historial de transacciones.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <p><i class="fa-solid fa-database"></i><strong>Gestión de inventario:</strong> Control eficiente del stock de películas mediante consultas SQL optimizadas.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <p><i class="fa-solid fa-users"></i><strong>Gestión de usuarios:</strong> Control de usuarios para los usuarios con rol de administradores.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <p><i class="fa-solid fa-code"></i><strong>Arquitectura MVC:</strong> Código organizado, escalable y fácil de mantener siguiendo las mejores prácticas.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <p><i class="fa-solid fa-mobile-alt"></i><strong>Diseño responsive:</strong> Interfaz adaptable a cualquier dispositivo gracias a Bootstrap.</p>
+                    </div>
+                </div>
+
+                <div class="collaborator-box">
+                    <p><i class="fa-solid fa-user"></i><strong>Colaborador:</strong> Iker Pérez-Cárcamo Corral</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

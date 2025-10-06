@@ -1,0 +1,177 @@
+        body{
+            padding-top: 0em;
+            padding-left: 5em;
+        }
+        
+        .project-detail-card {
+            display: grid;
+            grid-template-columns: 45% 55%;
+            gap: 6vh;
+            margin: 50px 0;
+            align-items: start;
+        }
+
+        .project-collage {
+            position: sticky;
+            top: 100px;
+            display: grid;
+            gap: 15px;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        
+
+        .project-collage-movil {
+            position: sticky;
+            top: 100px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 15px;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .collage-item, .collage-item-movil {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+            margin-top: 3vh;
+        }
+
+        .collage-item img,.collage-item-movil img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .collage-item-movil:nth-child(1),
+        .collage-item-movil:nth-child(2) {
+            width: 90%;
+            margin-top: 8vh;
+        }
+
+        .collage-item-movil:nth-child(3),
+        .collage-item-movil:nth-child(4) {
+            width: 90%;
+            margin-top: 3vh;
+        }
+
+        .collage-item-movil:nth-child(5),
+        .collage-item-movil:nth-child(6) {
+            width: 90%;
+            margin-top: 3vh;
+        }
+
+        .project-content {
+            padding-right: 20px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: inherit;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--accent-color, #d4af37);
+        }
+
+        .project-header-inline {
+            margin-bottom: 30px;
+        }
+
+        .project-header-inline h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .project-tags-inline {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 6vh 0;
+        }
+
+        .tag-inline {
+            background: rgba(212, 175, 55, 0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            border: 1px solid rgba(212, 175, 55, 0.4);
+        }
+
+        .description-section {
+            margin: 10vh 0;
+        }
+
+        .description-section h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .feature-item {
+            margin: 3vh 0;
+        }
+
+        .feature-item i {
+            color: var(--accent-color, #d4af37);
+            margin-right: 10px;
+        }
+
+        .collaborator-box {
+            background: rgba(212, 175, 55, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            margin-top: 7vh;
+        }
+
+        .collaborator-box p {
+            margin: 0;
+            font-size: 1.1em;
+        }
+
+        .collaborator-box i {
+            color: var(--accent-color, #d4af37);
+            margin-right: 10px;
+        }
+
+        @media (max-width: 1024px) {
+            .project-detail-card {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .project-collage {
+                position: relative;
+                top: 0;
+            }
+
+            .collage-item:first-child {
+                height: 250px;
+            }
+
+            .collage-item:nth-child(2),
+            .collage-item:nth-child(3) {
+                height: 180px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .collage-item:first-child {
+                height: 200px;
+            }
+
+            .collage-item:nth-child(2),
+            .collage-item:nth-child(3) {
+                height: 150px;
+            }
+        }
