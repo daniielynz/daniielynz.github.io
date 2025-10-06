@@ -8,4 +8,6 @@ Aquí encontrarás mis proyectos, conocimientos, habilidades y formas de contact
 - Mis conocimientos
 - Proyectos personales y colaborativos
 
+[![Portfolio](https://img.shields.io/badge/Portafolio-FFFFFF?style=for-the-badge&logo=About.me&logoColor=black)](https://daniielynz.github.io/)
+
 Gracias por visitar mi portafolio! 🚀
